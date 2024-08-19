@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background-color: black;
+    background-image: url('bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Ensure cover on smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-size: cover; /* Ensure cover on larger screens */
+    }
+}
+
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Make container responsive */
+    width: 400px; /* Set a max-width */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.continue-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .title {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    .continue-button {
+        padding: 8px 16px; /* Adjust button size for smaller screens */
+        font-size: 14px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Sharmaine's Gallery 
+        </div>
+        <div class="button-container">
+            <button class="continue-button" onclick="window.location.href='sharmaine.html';">Continue</button>
+        </div>
+    </div>
+</body>
+</html>
